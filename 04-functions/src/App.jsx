@@ -2,14 +2,12 @@
 
 function App() {
 
-  const buttonClicked=()=>{
-    console.log("Button Clicked");
+  const inputChange=(value)=>{
   };
 
   return (
     <>
-      <h1>Hello Guys</h1>
-      <button onClick={()=>{console.log("button clicked inside")}}> CLicked </button>
+      <input type="text" placeholder="Enter your Name: " onChange={(event)=>inputChange(event.target.value)}/>
     </>
   )
 }
